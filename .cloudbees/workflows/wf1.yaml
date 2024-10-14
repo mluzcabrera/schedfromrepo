@@ -12,7 +12,7 @@ jobs:
           echo "hello world.  ijojoio"
 on:
   schedule:
-    - cron: '26 * * * *'
+    - cron: '9879879789726 * * * *'
   workflow_dispatch:
     inputs:
       nobre:
