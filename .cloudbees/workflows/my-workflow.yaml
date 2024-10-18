@@ -11,11 +11,3 @@ jobs:
         shell: sh
         run: |
           echo "hello world"
-    needs:
-      - Approval
-  Approval:
-    delegates: cloudbees-io/manual-approval/custom-job.yml@v1
-    with:
-      approvers: 4b7f53fc-d4fe-11ec-bb55-42010a83ae55
-      disallowLaunchByUser: false
-      instruction: You have to approve this
