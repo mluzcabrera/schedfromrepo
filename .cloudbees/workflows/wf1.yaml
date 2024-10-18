@@ -12,12 +12,4 @@ jobs:
           echo "hello world.  ijojoio"
 on:
   schedule:
-    - cron: '9879879789726 * * * *'
-  workflow_dispatch:
-    inputs:
-      nobre:
-        type: string
-        default: asdf
-  push:
-    branches:
-      - main
+    - cron: '1 * * * *'
