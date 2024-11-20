@@ -2,8 +2,7 @@ apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflow
 on:
-  schedule:
-    - cron: 0 * * * *
+  workflow_dispatch:
 jobs:
   build:
     steps:
