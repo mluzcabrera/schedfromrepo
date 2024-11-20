@@ -11,5 +11,4 @@ jobs:
           sleep 100
           echo "hello world.  ijojoio"
 on:
-  schedule:
-    - cron: '57 * * * *'
+  workflow_dispatch:
