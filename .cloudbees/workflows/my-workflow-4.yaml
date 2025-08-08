@@ -5,7 +5,6 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    environment: production
     env:
       joblevel: joblevel
     steps:
