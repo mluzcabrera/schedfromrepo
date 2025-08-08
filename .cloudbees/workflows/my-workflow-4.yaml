@@ -1,0 +1,20 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: My workflow
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    environment: production
+    env:
+      joblevel: joblevel
+    steps:
+      - name: Say hello
+        env:
+         steplevel: stellevel
+        uses: docker://golang:1.20.3-alpine3.17
+        shell: sh
+        run: |
+          echo "$wflevel $joblevel $steplevel"
+env:
+  wflevel: wlevel
