@@ -12,5 +12,3 @@ jobs:
           echo "hello world.  ijojoio"
 on:
   workflow_dispatch:
-  schedule:
-    - cron: 10 * * * *
